@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Havre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('Image/Image_sainte_adresse.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh; /* Prend toute la hauteur de l'écran */
+            overflow-x: hidden; /* Évite le débordement horizontal */
+        }
+        header {
+            color: white;
+            padding: 0rem;
+            text-align: center;
+            margin-top: -2rem;
+        }
+        nav {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        section p, section h2, section h3 {
+            color: #fff; /* Texte blanc */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Ombre pour le contraste */
+            line-height: 1.6;
+        }
+        #resultat {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(13, 152, 186, 0.6);
+            border-radius: 5px;
+            margin-bottom: 3rem; /* Ajoute une marge de 3rem en bas */ 
+        }
+
+        /* Pour 2 images côte à côte */
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem auto;
+        }
+
+        .image-row .image-container {
+            flex: 1;
+            max-width: calc(50% - 1rem);
+            text-align: center;
+        }
+
+        /* Pour 4 images en grille 2x2 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem auto;
+        }
+
+        /* Style commun pour les conteneurs d'images */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container p {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: #ccc;
+        }
+
+        #sources {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(13, 152, 186, 0.6);
+            border-radius: 5px;
+            margin-bottom: 3rem; /* Ajoute une marge de 3rem en bas */
+        }
+        #sources a {
+        color: white; /* Couleur du texte du lien */
+            text-decoration: underline; /* Soulignement */
+        }
+
+        #sources a:hover {
+            color: #ffcc00; /* Couleur au survol */
+            text-decoration: none; /* Retire le soulignement au survol */
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 0.5rem; /* Padding réduit pour un footer discret */
+            font-size: 0.8rem; /* Taille de police plus petite */
+            margin-top: 2rem; /* Espace avant le footer */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Index.html">Présentation</a>
+        <a href="Equipe.html">Méthodologie</a>
+        <a href="Journal_de_bord.html">Journal de bord</a>
+        <a href="Resultat.html">Résultat</a>
+    </nav>
+    <header>
+        <h1>Ce que nous retenons</h1>
+    </header>
+    <main>
+        <section id="resultat">
+        <!-- Introduction -->
+            <p>L'agglomération havraise est marquée par une scission très nette de son territoire entre la commune de Sainte-Adresse et la ville du Havre. Cette séparation désirée est entretenue par ses représentants politiques, mais aussi par ses habitants. En effet, malgré leur proximité et leur histoire entremêlée, Sainte-Adresse se différencie du Havre sur plusieurs aspects : de par son agencement spatial, son tissu socio-économique, sa démographie, mais aussi par le biais de sa politique.</p>
+
+            <!-- Section : Spécificités géographiques -->
+            <h2>Les spécificités géographiques de Sainte-Adresse</h2>
+            <p>D'un point de vue spatial et géographique, on retrouve une séparation topographique naturelle de Sainte-Adresse du reste de l'agglomération havraise. Cet atout naturel vient réaffirmer de nouvelles frontières explicites et une isolation de la commune du reste de l'agglomération. Comme on peut le voir sur cette carte topographique, la majorité de la commune de Sainte-Adresse est située sur le plateau de la Hève, séparée du reste du Havre.</p>
+
+            <!-- Carte topographique -->
+            <div class="image-container">
+                <img src="Image\Resultat\carte_topographique_sainte_adresse.jpg" alt="Carte topographique de Sainte-Adresse">
+                <p>Source : Topographic-map.com, carte topographique Sainte-Adresse</p>
+            </div>
+
+            <p>Par ailleurs, comme cité précédemment, la grande majorité de la commune est située sur les hauteurs de falaise, ce qui lui permet d'être protégée de la montée du niveau des eaux en comparaison à la ville voisine du Havre, dont la grande partie du centre-ville est inondable. Cette protection naturelle permet à la commune de se sentir en sécurité et pérenne, ce qui a pour conséquence d'entraîner un renfermement sur elle-même et de ne pas chercher à s'étendre, ni à se protéger des aléas climatiques qui préoccupent peu les habitants après que nous les ayons interrogés, la priorité étant le maintien de leur cadre de vie calme et privilégié.</p>
+
+            <p>À cette topographie singulière, s'ajoute un atout de taille : Sainte-Adresse est la seule commune de la côte normande, de la ville de Calais jusqu'à celle de La Hague, à posséder une façade maritime orientée plein sud et sans vis-à-vis.</p>
+
+           <!-- Carte de la côte normande -->
+            <div class="image-container">
+                <img src="Image\Resultat\cote_normande_google_maps.jpg" alt="Carte de la côte normande">
+                <p>Source : Google Maps, capture d'écran côte normande</p>
+            </div>
+
+            <p>Ce cadre unique et privilégié de la côte normande offre un ensoleillement maximal et a permis l'aménagement du quartier de renom du "Nice Havrais", connu pour son climat doux et ensoleillé, rappelant la ville de Nice, connue pour être une des villes avec le plus d'ensoleillement à l'année. Ce quartier fait la renommée de la commune avec ses grandes villas au style varié, et l'ancien immeuble du "Nice Havrais" réalisé par Georges Dufayel qui fut le siège du gouvernement belge de 1914 à 1918.</p>
+
+            <!-- Image des villas du Nice Havrais -->
+
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="Image\Resultat\villas_nice_havrais_1.jpg" alt="Villas du Nice Havrais">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\villas_nice_havrais_2.jpg" alt="Villas du Nice Havrais">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\villas_nice_havrais_3.jpg" alt="Villas du Nice Havrais">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\villas_nice_havrais_4.jpg" alt="Villas du Nice Havrais">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+        </div>
+
+            <!-- Section : Spécificités socio-économiques -->
+            <h2>Les spécificités socio-économiques de Sainte-Adresse</h2>
+            <p>Au niveau socio-économique, Sainte-Adresse réaffirme encore sa scission vis-à-vis du reste de l'agglomération havraise avec la composition socioprofessionnelle de ses résidents en comparaison à la ville du Havre. Après plusieurs entretiens semi-directifs avec plusieurs habitants et après avoir étudié le dossier Insee de la commune, si l'on regarde le recensement des CSP des ménages de Sainte-Adresse, on recense 19,4 % des ménages qui sont des cadres et professions intellectuelles supérieures, là où Le Havre n'en recense que 8,4 %.</p>
+
+            <!-- Graphique CSP Sainte-Adresse -->
+
+        <div class="image-row">
+            <div class="image-container">
+                <h4>Sainte-Adresse</h4>
+                <img src="Image\Resultat\graphique_csp_sainte_adresse.jpg" alt="Type de logement à Sainte-Adresse">
+                <p>Source : Insee, dossier complet-Commune de Sainte-Adresse (76552)</p>
+            </div>
+            <div class="image-container">
+                <h4>Le Havre</h4>
+                <img src="Image\Resultat\graphique_csp_le_havre.jpg" alt="Type de logement au Havre">
+                <p>Source : Insee, dossier complet-Commune du Havre (76351)</p>
+            </div>
+        </div>
+
+            <p>En comparaison, au Havre, les ménages ouvriers représentent 15,9 % des CSP par ménage contre 5 % à Sainte-Adresse. Cette inversion des représentations des CSP par ménage entre ces 2 villes révèle une mixité sociale défaillante au sein de la commune de Sainte-Adresse où les CSP comme les employés et les ouvriers sont sous-représentés.</p>
+
+            <p>À cette mixité sociale défaillante s'ajoutent d'autres inégalités entre ces communes limitrophes : le taux de pauvreté recensé au Havre est de 23 %, tandis qu'à Sainte-Adresse il n'est que de 5 %, soit presque 5 fois moins qu'au Havre. À nouveau, comme pour la répartition socioprofessionnelle, on remarque une forte disparité illustrant à nouveau une divergence importante entre Sainte-Adresse et le reste de l'agglomération havraise.</p>
+
+            <!-- Graphique taux de pauvreté -->
+        <div class="image-row">
+            <div class="image-container">
+                <h4>Sainte-Adresse</h4>
+                <img src="Image\Resultat\graphique_taux_pauvrete_st_adresse.jpg" alt="Type de logement à Sainte-Adresse">
+                <p>Source : Insee, dossier complet-Commune de Sainte-Adresse (76552)</p>
+            </div>
+            <div class="image-container">
+                <h4>Le Havre</h4>
+                <img src="Image\Resultat\graphique_taux_pauvrete_le_havre.jpg" alt="Type de logement au Havre">
+                <p>Source : Insee, dossier complet-Commune du Havre (76351)</p>
+            </div>
+        </div>
+
+            <!-- Section : Spécificités démographiques -->
+            <h2>Les spécificités démographiques de Sainte-Adresse</h2>
+            <p>Sur le plan démographique, la composition de la population de Sainte-Adresse se différencie de celle du Havre. En effet, la commune de Sainte-Adresse est touchée par le vieillissement général de sa population actuelle. D'après le recensement de 2022 produit par l'INSEE, 46,1 % de la population de Sainte-Adresse a plus de 60 ans, ce qui est considérable. Près de la moitié des résidents de la commune sont des personnes proches de la retraite ou retraitées. Au Havre, en comparaison, seulement 26,6 % de sa population a plus de 60 ans, c'est presque 2 fois moins qu'à Sainte-Adresse.</p>
+
+            <!-- Graphique démographique -->
+            <div class="image-container">
+                <img src="Image\Resultat\graphique_demographie.jpg" alt="Graphique démographique">
+                <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+
+            <p>Le vieillissement de la population de Sainte-Adresse nous a tout de suite frappés lors de notre semaine de terrain, avant même que nous nous plongions dans les dossiers statistiques de l'INSEE. Nous avons pu observer lors de nos visites de terrain un nombre important d'infrastructures de santé orientées pour un public âgé : cabinet de soins infirmiers, nombreuses pharmacies, EHPAD, zone pour personnes à mobilité réduite sur les plages...</p>
+
+            <!-- Image infrastructures santé -->
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="Image\Resultat\infrastructures_sante_1.jpg" alt="Infrastructures de santé">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\infrastructures_sante_2.jpg" alt="Infrastructures de santé">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\infrastructures_sante_3.jpg" alt="Infrastructures de santé">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\infrastructures_sante_4.jpg" alt="Infrastructures de santé">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+        </div>
+
+            <div class="image-container">
+                <img src="Image\Resultat\infrastructures_sante_5.jpg" alt="Infrastructures de santé">
+                <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+
+            <!-- Section : Spécificités politiques -->
+            <h2>Les spécificités politiques de Sainte-Adresse</h2>
+            <p>Sur le plan politique, encore une fois, la commune de Sainte-Adresse ne cherche pas à s'ouvrir ou à se rendre accessible. Il suffit de marcher le long de sa promenade du littoral pour s'en rendre compte : caméras de surveillance, panneaux d'affichage interdisant l'accès aux épis, les nuisances sonores et la promenade d'animaux même tenus en laisse. Cela réduit ainsi drastiquement le type d'usage potentiel de la promenade qui est pourtant mis en avant par les affiches à but "touristique" de la mairie.</p>
+
+            <!-- Image promenade -->
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="Image\Resultat\promenade_littoral_1.jpg" alt="Promenade du littoral">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\promenade_littoral_2.jpg" alt="Promenade du littoral">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\promenade_littoral_3.jpg" alt="Promenade du littoral">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\promenade_littoral_4.jpg" alt="Promenade du littoral">
+                <p>Source : photographies personnelles - MUNIER Armand</p>
+            </div>
+        </div>
+
+            <p>Par ailleurs, la ville est dépourvue de bancs publics, rien n'incite les personnes à s'aventurer au sein de la commune.</p>
+
+            <!-- Section : Spécificités immobilières -->
+            <h2>Les spécificités immobilières de Sainte-Adresse</h2>
+            <p>Sur le plan immobilier, la différence significative de prix par m² entre Sainte-Adresse et la ville du Havre peut illustrer une nouvelle fois une volonté d'entre-soi : il est d'environ 3800 euros à Sainte-Adresse contre 2100 euros au Havre, près du double.</p>
+
+            <!-- Tableau prix immobilier -->
+
+        <div class="image-row">
+            <div class="image-container">
+                <h4>Sainte-Adresse</h4>
+                <img src="Image\Resultat\prix_immo_st_adresse.jpg" alt="Prix immobilier">
+                <p>Source : SeLoger.com, Prix m² Sainte-Adresse</p>
+            </div>
+            <div class="image-container">
+                <h4>Le Havre</h4>
+                <img src="Image\Resultat\prix_immo_le_havre.jpg" alt="Prix immobilier">
+                <p>Source : SeLoger.com, Prix m² Le Havre</p>
+            </div>
+        </div>
+
+            <p>Ainsi, il sert indirectement de barrière économique à la ville afin de choisir et de filtrer quelle catégorie de personnes peuvent s'installer au sein de la commune. De plus, nous n'avons pu observer aucune agence immobilière dans la ville, ce qui nous a été confirmé par un des acteurs rencontrés qui nous a expliqué que les maisons de Sainte-Adresse se vendaient entre réseaux de particuliers, encore une fois dans le but d'alimenter cet entre-soi.</p>
+            <p>En conséquence, la mobilité résidentielle de la commune est figée, accroissant encore plus l’ancienneté d’emménagement des ménages, composer en majorité de personnes âgées comme nous l’avons démontré précédemment. Sur le graphique ci-dessous nous pouvons constater qu’un pourcentage réduit de personne a emménagé a Sainte-Adresse en 2022 en comparaison au Havre, tandis que de la part de personne ayant emménagé depuis plus de 20 ans a Sainte-Adresse est largement supérieure a celle du Havre.</p>            
+            <div class="image-container">
+                <img src="Image\Resultat\anciennete_menages.jpg" alt="Ancienneté d'emménagement des ménages en 2022">
+                <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+            <p>De plus, la typologie du bâti de la commune n'a elle aussi pas vocation à accueillir de nouvelles populations, le logement individuel, étant largement mis en avant historiquement par rapport au logement collectif.</p>
+
+         <div class="image-row">
+            <div class="image-container">
+                <h4>Sainte-Adresse</h4>
+                <img src="Image\Resultat\type_logement_st_adresse.jpg" alt="Type de logement à Sainte-Adresse">
+                <p>Source : Insee, dossier complet-Commune de Sainte-Adresse (76552)</p>
+            </div>
+            <div class="image-container">
+                <h4>Le Havre</h4>
+                <img src="Image\Resultat\type_logement_le_havre.jpg" alt="Type de logement au Havre">
+                <p>Source : Insee, dossier complet-Commune du Havre (76351)</p>
+            </div>
+        </div>
+            <!-- Section : Spécificités de mobilité -->
+            <h2>Les spécificités de mobilité à Sainte-Adresse</h2>
+            <p>Vis-à-vis des politiques de mobilités, Sainte-Adresse est en position de retrait vis-à-vis du réseau de mobilité collective et douce du Havre. On peut noter que l'actuelle desserte du tramway havrais n'a pas été étendue jusqu'à Sainte-Adresse, or au XXe siècle, il existait une ligne de tramway qui assurait la liaison entre les 2 communes le long du littoral. Il s'agit d'un choix politique pris par les représentants de Sainte-Adresse qui a l'air d'être approuvé par les populations que nous avons interrogées. Selon une personne interrogée sur le manque de mobilité au sein de la commune : "Le tramway ne serait pas un mode de transport familial mais, plutôt un mode de transport utilisé par les travailleurs", elle l'a donc décrit comme inadapté aux besoins de la commune.</p>
+
+            <!-- Image tramway historique -->
+            <div class="image-container">
+                <img src="Image\Resultat\tramway_historique.jpg" alt="Tramway historique">
+                <p>Source : Le Havre patrimonial, images du Havre</p>
+            </div>
+
+            <p>Par conséquent, actuellement, seulement 1 ligne de bus circule jusqu'au cœur de la commune, la ligne (C1), une autre ligne (C16) complémentaire emprunte aussi la rue d'Ignauval, mais cette dernière se dirige rapidement vers les hauteurs nord de Sainte-Adresse où elle rejoint le quartier de Bléville au Havre.</p>
+
+            <!-- Image plan bus LIA -->
+            <div class="image-container">
+                <h4>Plan bus LIA</h4>
+                <img src="Image\Resultat\plan_bus_lia.jpg" alt="Plan bus LIA">
+                <p>Source : Plan bus LIA</p>
+            </div>
+
+            <p>Par ailleurs, l'application de mobilité douce de vélos et trottinettes électriques en libre-service "Voi" de l'agglomération havraise n'a pas été étendue jusqu'à Sainte-Adresse, afin de garder la tranquillité de la commune, selon les habitants interrogés.</p>
+
+            <!-- Image plan réseau Voi -->
+         <div class="image-row">
+            <div class="image-container">
+                <img src="Image\Resultat\plan_reseau_voi_1.jpg" alt="Plan réseau Voi">
+                <p>Source : Plan réseaux Voi</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\plan_reseau_voi_2.jpg" alt="Plan réseau Voi">
+                <p>Source : Plan réseaux Voi</p>
+            </div>
+        </div>
+
+            <p>En conséquence de la position de retrait de la commune à se joindre au réseau de mobilité de l'agglomération havraise, la voiture occupe une place importante dans la ville, la circulation y est extrêmement dense aux heures de pointe.</p>
+
+            <!-- Image circulation -->
+         <div class="image-row">
+            <div class="image-container">
+                <img src="Image\Resultat\circulation_voitures_1.jpg" alt="Circulation">
+                <p>Source : photographie personnelles - MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\circulation_voitures_2.jpg" alt="Circulation">
+                <p>Source : photographie personnelles - MUNIER Armand</p>
+            </div>
+        </div>
+
+            <p>Encore une fois, Sainte-Adresse se distingue du Havre avec une part de ménages qui possèdent au moins 2 voitures qui sont deux fois plus élevées qu'au Havre. Cela est dû, comme nous l'avons mentionné précédemment, à une isolation géographique et à une insuffisance de transport au sein de la commune. Par conséquent, la plupart des déplacements effectués par les résidents de la commune se réalisent en voiture.</p>
+
+            <!-- Graphique possession voitures -->
+            <div class="image-container">
+               <img src="Image\Resultat\graphique_possession_voitures.jpg" alt="Graphique possession voitures">
+               <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+
+            <div class="image-container">
+               <img src="Image\Resultat\cohabitation_mode_transport.jpg" alt="Cohabitation entre les différents type de transport">
+               <p>Source : photographie personnelles - MUNIER Armand</p>
+            </div>
+
+            <!-- Conclusion -->
+            <h2>Conclusion</h2>
+            <p>Après cette semaine de terrain et le travail préparatoire nécessaire à la réalisation de notre blog, le phénomène d'entre-soi de Sainte-Adresse s'est révélé à nous de manière évidente. Toutefois, les choix politiques qui conduisent à l'isolement volontaire de Sainte-Adresse ne sont pas sans conséquence : sa population vieillit et ne se renouvelle pas, son solde naturel est faible et insuffisant, sa mobilité résidentielle est figée par un réseau de vente entre particuliers et des prix trop élevés.</p>
+
+            <!-- Graphique conclusion démographique -->
+         <div class="image-row">
+            <div class="image-container">
+                <img src="Image\Resultat\graphique_conclusion_demographie_1.jpg" alt="Graphique conclusion démographique">
+                <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\Resultat\graphique_conclusion_demographie_2.jpg" alt="Graphique conclusion démographique">
+                <p>Source : données INSEE - Graphique MUNIER Armand</p>
+            </div>
+        </div>
+
+            <p>Comme nous pouvons le voir sur les graphiques ci-dessus, la population de la commune vieillit massivement et ne cesse de diminuer sans se renouveler, ce qui finira par l'obliger à revoir ses orientations politiques en matière d'aménagement et de gestion de sa commune.</p>
+        </section>
+        <section id="sources">
+            <h2>Sources :</h2>
+            <ul>   
+                <li><a href="https://fr-fr.topographic-map.com/map-r4tj/Sainte-Adresse/" target="_blank" rel="noopener noreferrer">Carte topographique Sainte-Adresse, altitude, relief. (s. d.). Cartes Topographiques.</a></li>
+                <li><a href="https://www.insee.fr/fr/statistiques/2011101?geo=COM-76552" target="_blank" rel="noopener noreferrer">Dossier complet − Commune de Sainte-Adresse (76552) | Insee. (s. d.).</a></li>
+                <li><a href="https://www.insee.fr/fr/statistiques/2011101?geo=COM-76351" target="_blank" rel="noopener noreferrer">Dossier complet − Commune du Havre (76351) | Insee. (s. d.).</a></li>
+                <li><a href="https://imagesduhavre.wordpress.com/2010/12/27/front-de-mer-le-havre-vue-sur-sainte-adresse-avec-tramway/" target="_blank" rel="noopener noreferrer">Front de mer, Le Havre : vue sur Sainte-Adresse avec tramway. (2010, 27 décembre). LE HAVRE PATRIMONIAL.</a></li>
+                <li><a href="https://www.transports-lia.fr/ftp/document/plangenerallia-novembre2025.pdf" target="_blank" rel="noopener noreferrer">OpenStreetMap & Transports Lia. (s. d.). Plan général 2025 MAJ novembre.</a></li>
+                <li><a href="https://www.seloger.com/prix-de-l-immo/vente/haute-normandie/seine-maritime/le-havre/760351.htm" target="_blank" rel="noopener noreferrer">Prix m2 immobilier Le Havre (76) en décembre 2025 | SeLoger. (2025, 1 novembre).</a></li>
+                <li><a href="https://www.seloger.com/prix-de-l-immo/vente/haute-normandie/seine-maritime/sainte-adresse/760552.htm" target="_blank" rel="noopener noreferrer">Prix m2 immobilier Sainte-Adresse (76) en décembre 2025 | SeLoger. (2025, 1 novembre).</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 - Matteo Teixeira</p>
+    </footer>
+</body>
+</html>
