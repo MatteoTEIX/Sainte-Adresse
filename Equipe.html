@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-image: url('Image_sainte_adresse.jpg');
+            background-image: url('Image/Image_sainte_adresse.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -41,12 +41,17 @@
             border-radius: 5px;
             margin-bottom: 1rem;
         }
+        section p, section h2, section h3 {
+            color: #fff; /* Texte blanc */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Ombre pour le contraste */
+            line-height: 1.6;
+        }
         /* Style pour la section Équipe */
         #limite {
             padding: 2rem;
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(13, 152, 186, 0.4);
+            background-color: rgba(13, 152, 186, 0.6);
             border-radius: 5px;
             margin-bottom: 3rem; /* Ajoute une marge de 3rem en bas */
         }
@@ -54,9 +59,26 @@
             padding: 2rem;
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(13, 152, 186, 0.4);
+            background-color: rgba(13, 152, 186, 0.6);
             border-radius: 5px;
             margin-bottom: 3rem; /* Ajoute une marge de 3rem en bas */
+        }
+        #sources {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(13, 152, 186, 0.6);
+            border-radius: 5px;
+            margin-bottom: 3rem; /* Ajoute une marge de 3rem en bas */
+        }
+        #sources a {
+        color: white; /* Couleur du texte du lien */
+            text-decoration: underline; /* Soulignement */
+        }
+
+        #sources a:hover {
+            color: #ffcc00; /* Couleur au survol */
+            text-decoration: none; /* Retire le soulignement au survol */
         }
 
         footer {
@@ -72,7 +94,7 @@
 <body>
     <nav>
         <a href="Index.html">Présentation</a>
-        <a href="Equipe.html">Méthodologie</a>
+        <a href="Equipe.html">méthodologie</a>
         <a href="Journal_de_bord.html">Journal de bord</a>
         <a href="Resultat.html">Résultat</a>
     </nav>
@@ -139,11 +161,17 @@
             <h3>Limites des supports visuels</h3>
             <p>Les clichés photographiques et croquis produits lors de l’enquête ne capturent qu’un la vision de l’enquêteur à un instant donnée ce qui induit  une absence de dimension temporelle, ni des interactions informelles qui pourraient nuancer, voir contredire, l’hypothèse de l’"entre-soi".</p>
         </section>
+        <section id="sources">
+           <h2>Sources :</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 1rem;">Agier, M. (2009). <em>Les situations ordinaires de la vie urbaine</em>.</li>
+                <li style="margin-bottom: 1rem;">Foucault, M., & Deleuze, G. (1972). Les intellectuels et le pouvoir. <em>L'Arc</em>, 49.</li>
+                <li style="margin-bottom: 1rem;">Tarrius, A. (1992). Le sociologue, son poulailler et les camionneurs. Dans <em>Enquêtes de terrain et détours anthropologiques</em>.</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>© 2025 - Matteo Teixeira</p>
     </footer>
 </body>
-
 </html>
-
