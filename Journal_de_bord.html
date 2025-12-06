@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Havre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('Image/Image_sainte_adresse.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh; /* Prend toute la hauteur de l'écran */
+            overflow-x: hidden; /* Évite le débordement horizontal */
+        }
+        header {
+            color: white;
+            padding: 0rem;
+            text-align: center;
+            margin-top: -2rem;
+        }
+        nav {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(13, 152, 186, 0.6);
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        section p, section h2, section h3 {
+            color: #fff; /* Texte blanc */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Ombre pour le contraste */
+            line-height: 1.6;
+        }
+        .sidebar {
+            position: fixed; /* Reste visible lors du défilement */
+            top: 80px; /* Positionne en dessous de la nav */
+            right: 0; /* À droite de l'écran */
+            width: 150px; /* Largeur de la barre */
+            background-color: rgba(13, 152, 186, 0.4); /* Fond semi-transparent */
+            color: white; /* Couleur du texte */
+            padding: 1rem; /* Espace interne */
+            border-radius: 5px 0 0 5px; /* Bordures arrondies à gauche */
+            z-index: 999; /* Reste au-dessus du contenu */
+        }
+        .sidebar h3 {
+            margin-top: 0; /* Supprime la marge en haut */
+            text-align: center; /* Centre le titre */
+            border-bottom: 1px solid white; /* Ligne de séparation */
+            padding-bottom: 0.5rem; /* Espace sous le titre */
+        }
+        .sidebar ul {
+            list-style: none; /* Supprime les puces */
+            padding: 0; /* Supprime le padding par défaut */
+            margin: 0; /* Supprime la marge par défaut */
+        }
+        .sidebar li {
+            margin-bottom: 0.5rem; /* Espace entre les éléments */
+        }
+        .sidebar a {
+            color: white; /* Couleur des liens */
+            text-decoration: none; /* Supprime le soulignement */
+            display: block; /* Occupe toute la largeur */
+            padding: 0.3rem; /* Espace autour du lien */
+            border-radius: 3px; /* Bordures arrondies */
+            transition: background-color 0.3s; /* Animation au survol */
+        }
+        .sidebar a:hover {
+            background-color: rgba(13, 152, 186, 0.6); /* Fond au survol */
+        }
+                /* Pour 2 images côte à côte */
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem auto;
+        }
+
+        .image-row .image-container {
+            flex: 1;
+            max-width: calc(50% - 1rem);
+            text-align: center;
+        }
+
+        /* Pour 4 images en grille 2x2 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem auto;
+        }
+
+        /* Style commun pour les conteneurs d'images */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container p {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: #ccc;
+        }
+        footer {
+            color: white;
+            text-align: center;
+            padding: 0.5rem; /* Padding réduit pour un footer discret */
+            font-size: 0.8rem; /* Taille de police plus petite */
+            margin-top: 2rem; /* Espace avant le footer */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <a href="Index.html">Présentation</a>
+        <a href="Equipe.html">Méthodologie</a>
+        <a href="Journal_de_bord.html">Journal de bord</a>
+        <a href="Resultat.html">Résultat</a>
+    </nav>
+    <div class="sidebar">
+        <h3>Jours</h3>
+        <ul>
+            <li><a href="#jour_1">Jour 1</a></li>
+            <li><a href="#jour_2">Jour 2</a></li>
+            <li><a href="#jour_3">Jour 3</a></li>
+            <li><a href="#jour_4">Jour 4</a></li>
+            <li><a href="#jour_5">Jour 5</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Parce que c'est notre projet !!!</h1>
+    </header>
+    <main>
+        <section id="jour_1">
+            <h2>Jour 1</h2>
+            <p>A notre arrivée au Havre, nous avons assisté à la réunion de présentation nous expliquant comment allait se dérouler notre semaine ainsi que la présentation des différents ateliers proposés nous permettant de rencontrer différents acteurs de la ville. Une fois cette réunion terminée nous avons appelé plusieurs acteurs en lien avec la question des risques naturels pour tenter d’obtenir un entretien avec eux. Nous avons réussi à joindre « le Suivi du Littoral Normands » qui nous a redirigé vers le « Syndicat Mixte de la Seine-Maritime » et le « Réseau d’observation du Littoral de Normandie et des Hauts-de-France » puisqu’il n’était pas capable de répondre à nos demandes étant plus axé sur l’aménagement du littoral. Nous avons alors tenté d’appeler ces deux acteurs, malheureusement aucun d’entre eux ne nous a répondu nous leur avons donc laissé un message. </p>
+            <p>A la suite de ces appels nous avons décidé de nous séparer en deux équipes : en effet, la première équipe devait se rendre sur le littoral pour faire la découverte de notre terrain à Sainte Adresse ainsi que faire nos premières observations. Et la deuxième équipe devait se rendre à l’Université du Havre pour voir si l’un des professeurs serait capable de répondre à nos questions lors d’un entretien, puis devait ensuite rejoindre l’équipe 1 pour la suite des observations. </p>
+            <h3>Équipe 1 : Jade, Éloïse, Callista et Océane :</h3>
+            <p>Pour nous rendre à la ville de Sainte Adresse nous avons pris le tram jusqu’à l’arrêt « La Plage » qui nous emmenait jusqu’à la plage du Havre. Une fois arrivée là-bas nous avons décidé de longer le littoral du Havre jusqu’à Sainte Adresse au lieu de prendre le bus pour nous y rendre. En effet, nous voulions voir si les aménagements présents sur la plage du Havre seraient différents ou identiques à ceux que nous verrons sur la plage de Sainte Adresse. Sur la plage du Havre, nous avons pu voir que les aménagements faits sont agréables : il y a des espaces pour que les gens puissent faire du sport et s’amuser sur cette plage. Globalement nous avons eu le ressenti que cette plage était ouverte, accessible et agréable pour les promeneurs et les usagers. Pourtant, plus nous marchions vers Sainte Adresse plus nous pouvions remarquer des différences dans leurs aménagements du littoral, une forme de rupture entre les deux villes : nous pouvions voir des barrières avec des panneaux d’interdiction d’aller sur la plage et d’avoir des bruits sonores.</p>
+            <p>Nous y avons également remarqué des digues pour couper l’élan de la mer, ainsi que des galets, au niveau des habitations nous avons pu voir qu’elles étaient protégées par un mur de pierre potentiellement pour couper l’élan de l’eau s’il y a des inondations. Nous nous sommes alors dit que les pratiques de cette plage devaient être quasiment nul puisqu’elle ne paraissait pas agréable. Nous avons aussi remarqué qu’il n’y avait aucun commerce présent sur le littoral de Sainte Adresse et seulement quelques restaurants : deux ou trois mais pas plus. Avec ces premières observations, nous nous sommes tout de suite dit que la plage n’était pas du tout aménagée pour le tourisme, mais seulement pour la protection du littoral.</p>
+            <h3>Équipe 2 : Mattéo et Armand :</h3>
+            <p>Après notre séparation avec l’équipe 1, nous nous sommes rendus à l’Université du Havre. En effet, suite à la lecture d’un article de France Universités sur les « Causes et conséquences de l’élévation du niveau de la mer à l’horizon 20100 » pour lequel l’Université du Havre y a participé nous nous sommes dit que questionner les professeurs de l’Université pourrait être intéressant. L’Université étant à 10 minutes de l’auberge nous y sommes allés à pied. Une fois arrivé dans le bâtiment de l’UFR Lettres et Sciences humaines, nous avons pu voir que les emplois du temps des professeurs travaillant sur les questions touristiques et urbanistiques était disponible ce qui nous a permis d’attendre la fin du cours de sociologie du tourisme de Monsieur Le Marchand pour lui demander un entretien. Après avoir discuté avec lui, nous avons pu obtenir un rendez-vous avec lui pour le mercredi 15 octobre à 14h dans la cafétéria de l’Université.</p>
+            <p>Une fois que nous avons pu obtenir cet entretien, nous nous sommes dirigés vers Sainte Adresse pour rejoindre l’équipe 1. Pour ce faire nous avons également pris le tram jusqu’à l’arrêt « La Plage », puis avons décidé de longer le littoral du Havre pour nous aussi faire nos observations sur les différences entre l’aménagement du littoral du Havre et celui de Sainte Adresse. Nous avons pu voir que Sainte Adresse à une proximité plus accrue avec la mer que la ville du Havre, les habitations semblaient pour la plupart vides puisque les volets étaient fermés nous laissant penser que ce sont des habitations secondaires utilisées lors des périodes estivales. Ces maisons semblaient aussi nettement plus grandes que celle du Havre montrant que c’est potentiellement une population plus aisée qui y vit. A la fin de ces observations nous avons fini par rejoindre l’équipe 1 qui nous attendait à la moitié du littoral de Sainte Adresse.</p>
+            <h3>Retour au groupe :</h3>
+            <p>Après que nous ayons été réunis nous avons décidé de visiter également l’intérieur de la ville et non uniquement son littoral, c’est à ce moment que nous avons commencé à observer plusieurs choses. Tout d’abord, nous avons pu voir que la ville semble très surveillée car il y avait beaucoup de caméras de surveillance dispersées dans la ville. Ensuite, il n’y avait pratiquement que des personnes âgées dans la rue ce qui coïncidait avec ce que nous avions lu dans le PLU de la commune, c’est-à-dire que la population est majoritairement vieillissante. Enfin, nous avons pu voir que la ville est majoritairement faite pour la voiture : Sainte Adresse est en pente, les déplacements sont donc plus faciles à faire en voiture, dans les rues les trottoirs sont très étroits voire inexistant ou utilisé par les voitures pour se garer nous forçant à marcher sur la route. Nous sommes également passés par la mairie dans laquelle nous sommes entrés pour tenter de demander un rendez-vous avec une personne gérant l’urbanisme de la ville puisque nous n’avions pas eu de réponse à nos mails. On nous a dit de repasser le lendemain. Nous avons également remarqué qu’il y avait peu de transport en commun dans la ville : seulement deux bus, nous nous sommes alors demandé si ce transport était suffisant pour les habitants de la ville ou si leur augmentation et le développement de pistes cyclables leur serait intéressant.</p>
+            <p>Après cela, nous sommes retournés à l’auberge pour discuter de nos observations et ressenti de notre terrain, ainsi que de regrouper nos questionnements. Pour cela, nous avons décidé d’écrire sur des post-it nos premières idées de problématiques pour commencer à réfléchir à la problématique principale de notre étude de terrain. Par la suite, nous avons également décidé d’écrire sur des post-it les questions que nous souhaiterions poser aux acteurs que nous rencontrerons dans la semaine. A la fin de ces moments d’écritures nous avons mis en commun nos propositions pour voir les points de vue de chacun d’entre nous et déterminer les questions que nous devrions absolument poser car les réponses étaient les plus intéressantes.</p>
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="Image\photo_j1.jpg" alt="Idée de problématique">
+                <p>Source : photographies personnelles - CAUDRON Océane</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\photo_j1_2.jpg" alt="Petit papier jour 1">
+                <p>Source : photographies personnelles - CAUDRON Océane</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\photo_j1_3.jpg" alt="Petit papier jour 1">
+                <p>Source : photographies personnelles - CAUDRON Océane</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\photo_j1_4.jpg" alt="Petit papier jour 1">
+                <p>Source : photographies personnelles - CAUDRON Océane</p>
+            </div>
+        </div>            
+            <p>A la fin de la journée, nous avons déterminé qui ferait quoi le lendemain en nous divisant en deux groupes : une équipe pour retourner à la mairie le matin pour tenter d’obtenir un entretien ainsi que d’aller l’après-midi à l’atelier organisé par le CAUE à Sainte Adresse et une deuxième équipe faisant des entretien semi-directif auprès de la population. En effet, les différentes observations que nous avons eu durant cette journée nous ont fait nous poser des questions : est-ce que les habitants se sentent concernés par les risques d’inondations et d’érosion ? Pourquoi est-ce que la ville est autant surveillée ? Surveillance qui nous donnait une première impression d’un entre-soi. Et enfin, quel type de population vie dans cette commune.</p>
+        </section>
+        <section id="jour_2">
+            <h2>Jour 2</h2>
+            <p>Au début de notre journée, nous sommes allés tous ensemble à Sainte Adresse, pour ensuite nous diviser en deux équipes : une allant à la mairie et à l’atelier proposé par le CAUE l’après-midi et une autre allant au marché de la ville pour interroger les habitants. Cependant, une fois arrivée au marché fleuri, l'équipe 2 s’est rendu compte que le marché avait lieu le vendredi et non le mardi. De ce fait, cette équipe s'est séparée en deux pour interroger le plus de personnes possibles dans ce marché et aux fleurs et dans le reste de la ville.</p>
+            <h3>Équipe 1 Mattéo et Callista :</h3>
+            <p>Nous avons fait nos entretiens entre 10h30 et 14h, en commençant par le marché aux fleurs. Là-bas nous avons pu discuter avec deux personnes : un habitant sortant de la pharmacie et le seul commerçant présent sur le marché. Tous deux n’habitaient pas Sainte Adresse : le premier habite au Havre et travail à Sainte Adresse, bien qu’il ait vécu à Sainte Adresse de sa naissance à son adolescence avant de partir vivre au Havre, le second lui vit à Heuqueville et vient travailler au marché aux fleurs depuis 15 ans. Ces deux personnes interrogées nous ont appris que les transports en communs présents dans la ville était suffisant et desservait très bien Sainte Adresse car auparavant il n’y en avait aucun et tous les déplacements se faisaient donc en voiture. Les deux lignes de bus sont nettement convenables puisqu’étant une petite ville moyenne la plupart des trajets se font encore en voiture. Le commerçant nous a donné plus de détails, nous expliquant que les rues deviennent plus étroites et à sens unique à certains endroits ce qui rend plus difficile la circulation des voitures. Il s’inquiétait également du problème de l’érosion mais surtout pour les générations futures qui subiront le plus les conséquences de ce risque.</p>
+            <p>Par la suite, nous avons décidé de poursuivre nos entretiens plus loin dans la ville, particulièrement dans les hauteurs, car nous n’avions pas visité cette partie le premier jour de notre terrain. Durant notre montée nous avons pu constater que les trottoirs se rétrécissaient de plus en plus pour laisser une place plus importante aux voitures. En continuant notre monté, nous sommes allés sur la balade « Cap de la Hève » où nous avons pu interroger trois autres personnes vivant à Sainte Adresse qui nous ont informé que la majorité de leur déplacement se font à pied car la ville est assez praticable pour elle n’utilisant la voiture que pour sortir de la ville mais n’utilise pas du tout les bus.</p>
+            <p>En continuant nos entretiens plus haut dans la ville nous avons pu remarquer que la plupart des habitants étant inquiets du risque d’érosion ne le sont pas pour les logements mais pour les chemins de balades qui deviennent plus dangereux pour les randonneurs. Nous avons pu observer ces inquiétudes lors de notre visite où une partie du chemin est balisée pour la sécurité des usagers. Ces entretiens nous ont aussi permis d’apprendre qu’il y a une différence de traitement entre les habitants des hauteurs et du bas de Sainte Adresse, où ceux vivant dans les hauteurs sont moins bien traités dans le sens ou les entretiens des routes par exemple sont moins fait que celles du bas de la ville.  Nous avons également remarqué une forme d’entre-soi où les habitants ne souhaitent pas voir leur chemin de randonnée et d’espaces verts devenir des lieux touristiques : ils souhaitent que cela reste entre eux et ne soit pas partagé.</p>
+            <p>Une fois que nous avons terminé nos entretiens nous avons décidé de nous concentrer sur l’accessibilité et la visite intérieure de Sainte Adresse. Cela nous a permis de constater que la place du marché n’est pas très vivante avec seulement un bar et une entreprise de chauffage le reste de la place est faite d’habitation avec peu d’espace pratique pour se garer et pour y aller à pied. Nous avons encore une fois pu voir que les trottoirs sont assez étroits ce qui rend dangereux la circulation des piétons qui se retrouvent à marcher sur la route. Lors de notre descente de la ville nous avons vu qu’il y a peu de commerce présent à Sainte Adresse avec une très grande majorité d’habitation.</p>
+            <h3>Équipe 2 Éloïse et Armand :</h3>
+            <p>Après que nous nous soyons séparés de l’équipe 1 nous avons décidé de poursuivre l’observation de la ville que nous avions arrêté la veille. Nous sommes allés au plateau de la Hève où nous avons pu voir qu’il y a des immeubles de réhabilitation LOPOFA qui comportent des logements populaire et familial, ainsi que des îlots de logements collectifs. Sur ce plateau nous avons également découvert un bâtiment abandonné servant de de division du terrain pour bâtir de nouveaux bâtiments, potentiellement des logements. En continuant, notre balade nous avons découvert la promenade qui surplombe la Plage du Bout du Monde ainsi que les phares de la Hève et d’anciens boomcoeurs abandonnés. Nous avons ensuite descendu la rue d’Ignauval jusqu’à l’intersection de la rue de la Cave Haize où nous avons pu voir qu’une très grande majorité des logements sont en individuels et en pavillonnaire hormis les nouveaux logements du plateau de la Hève. Au même moment, nous avons remarqué le panneau de la fin de la commune de Sainte Adresse et du début de celle du Havre, nous donnant plus d'informations sur la limitation de notre zone d’étude.</p>
+            <p>Lors de notre visite nous avons pu voir que dans les hauteurs de la ville il y avait une rupture au niveau de la qualité des bâtiments des habitations, qui est nettement moindre que pour les habitations situées en bas de Sainte Adresse. Ceci nous a permis de voir qu’il y a des inégalités très visibles entre les différents habitants de ce territoire. Nous avons également pu remarquer qu’il y avait un entretien ardu des espaces verts à proximité de l’espace culture ainsi que de la voirie. Enfin, nous sommes passés par les bois de la ville où nous avons pu voir que là aussi il y a un fort entretien de cet espace puisque les arbres malades sont marqués et abattus pour qu’ils ne contaminent pas les autres arbres. Derrière cette forêt se trouve un micro-quartier fermé sur lui-même par des routes circulaires. Ce quartier isolé du reste de la ville n’est accessible que par certaines entrées bien cachées. Cela témoigne de la volonté de quiétude et d’isolement du reste du tissu urbain. Nos observations montrent que c’est un quartier très calme, voire éteint, certains résidents laissent même leur portail ouvert montrant un sentiment de sécurité de la part des habitants.</p>
+            <p>Toutes ces observations nous ont permis de voir que la ville semble avoir une rupture avec elle-même surtout certains quartiers, mais aussi que les habitants semblent coincés dans un entre-soi totalement admis comme nous avons pu le voir avec le micro-quartier. L’entretien assidu des espaces verts et de la voirie nous a également donné l’impression que la commune cherche à donner un cadre privilégié à ses administrés.</p>
+            <h3>Équipe 3 Jade et Océane :</h3>
+            <p>Après nous être séparés des équipes 1 et 2, nous nous sommes rendus à la Mairie de Sainte Adresse pour voir si nous pouvions obtenir un entretien avec la personne s’occupant de l’urbanisme de la commune. Sachant qu’il y avait un risque que nous obtenions un entretien qui aurait lieu immédiatement après notre demande, nous avions pris les questions que nous avions fait la veille au cas où. Une fois arrivée à la Mairie ont nous a informé que la personne gérant l’urbanisme est l’un des adjoints au Maire : Monsieur Lebourg. Lorsque nous l’avons rencontré, il nous a expliqué que le seul moment de libre dans la semaine pour que nous puissions avoir un entretien était à l’instant même. Nous avons donc fait notre entretien avec lui ce jour-là de 9h45 à 10h45. Nous avons commencé par lui poser des questions sur l’aménagement du littoral contre le risque inondation et d’érosion, M. Lebourg nous a informer qu’à part les digues installées sur la plage ainsi que les panneaux interdisant l’accès aux digues il n'y avait pas vraiment d’aménagement fait puisque la question des risques est gérée par la métropole et non Sainte Adresse. Nous en avons alors profité pour lui poser les autres questions dont nous souhaitons avoir les réponses : au niveau de la population il nous a dit que les habitants sont majoritairement des personnes âgées ou des cadres en nous explicitant très clairement que c’est une population très aisée qui vit à Sainte Adresse. Il a alors expliqué que de par la richesse des ménages présents les maisons coûtent très cher, de ce fait il y a peu de nouveaux ménages qui peuvent s’installer. La mairie a pour objectif d’installer un parc de logements sociaux de type PLS dans lequel les ménages devront avoir un revenu minimum de 4000 euros pour y habiter. Cela montre donc que c’est encore une fois une population de type aisées qu’ils souhaitent voir installer sur le territoire.</p>
+            <p>Nous lui avons ensuite posé des questions sur l’accessibilité du territoire avec les autres villes et communes, nous voulions principalement savoir si les mobilités présentes dans la ville sont suffisantes pour les habitants ou si de nouvelles vont être faites. Il nous a répondu que la place de la voiture est encore très importante pour les habitants, mais qu’avec les questions de changement climatique Sainte Adresse souhaite développer de nouvelles lignes de bus pour accompagner les deux existantes. Le manque de pistes cyclables, qui ne sont qu’à 4% présentes dans la ville, s’explique par le fait que les habitants ne les utilisent pas, il n'est donc pas nécessaire de plus les développer. Enfin, M. Lebourg nous a aussi présenté le projet du prolongement de la ligne de tramway jusqu’à Sainte Adresse qui serait accompagnée par l’intercommunalité ce qui accentuerait la desserte de la ville.</p>
+            <p>A la fin de notre entretien, nous avons tenté de rejoindre les deux autres équipes. Cependant, étant chacun occupé nous avons décidé de rester séparés jusqu’à la fin de la journée. Nous sommes alors montés dans la ville pour observer les parties que nous n’avions pas vues. Nous avons pu voir que la majorité des habitations était des maisons individuelles assez grandes pour la plupart. Nous avons ensuite cherché un chemin permettant de descendre les hauteurs de la ville pour aller directement sur la plage. Cependant, nous avons pu constater qu’il n’y a pas de chemin qui donne directement à la plage depuis les hauteurs. Il nous faut redescendre une bonne partie de la ville pour retourner sur le littoral.  Après cela nous avons rejoint le reste de la promo pour participer à l’atelier du CAUE qui a eu lieu sur le littoral de Sainte Adresse. Dans cet atelier nous avons pu apprendre qu’à l’origine la ville était majoritairement habité par des personnes de la classes bourgeoises qui sont revenu sur les lieux à la fin de la Seconde Guerre Mondiale. Ce qui explique le fait que la population présente soit très majoritairement aisée car les premiers habitants sont restés et les maisons se sont transmises.</p>
+            <h3>Retour au groupe :</h3>
+            <p>Lorsque nous avons terminé nos tâches pour la journée nous nous sommes retrouvés à l’auberge pour échanger entre nous de nos journées et connaître ce que chacun avait appris de son côté. En discutant nous nous sommes alors rendus compte que le thème des risques naturels n’allait pas fonctionner. En effet, l’adjoint au maire nous a bien fait comprendre que ce n’est pas un grand risque pour le territoire et que ces questions étaient gérées par la métropole. Et les habitants ne semblaient pas plus inquiets que ça par rapport à la question des risques. Cependant, plus nous échangions, plus nous nous sommes rendu compte qu’il y avait un réel entre-soi qui se démarquait : la volonté de ne pas voir de tourisme s’installer dans leur territoire, le micro-quartier, la population majoritairement aisée. Tout cela nous a permis de voir qu’il y avait une forte volonté de la part de la Mairie comme des habitants de ne pas voir de mélange se faire dans leur territoire. A la suite de ces réalisations nous avons décidé d’organiser à l’avance notre journée du lendemain. Comme pour les deux premiers jours nous nous sommes divisés en 3 équipes : la première participerait à l’atelier organisé par la mairie du Havre pour savoir si des liens sont entretenu entre Sainte Adresse et le Havre, puis irait dans notre espace d’étude pour réaliser des entretiens semi-directifs aux personnes utilisant le littoral pour savoir si ce sont des habitants de la ville qui l’utilise ou non. La deuxième équipe irait à la métropole du Havre pour tenter d’obtenir un entretien avec eux, puis irait faire des entretiens à l’intérieur de Sainte Adresse pour voir si nous retrouvions cet entre-soi. Enfin, la dernière équipe réaliserait la grille d’entretien puis irait à l’entretien avec le professeur de sociologie de l’Université du Havre.</p>
+        </section>
+        <section id="jour_3">
+            <h2>Jour 3</h2>
+            <h3>Équipe 1 Callista et Océane : </h3>
+            <p>Nous avons commencé notre journée par assister à la réunion organisée avec M. Avelene qui travaille au service d’urbanisme du Havre rattaché à la transition écologique. Bien que cette réunion ait été intéressante, il nous a très peu parlé de Sainte Adresse alors lors des échanges de questions-réponses à la fin de la réunion nous en avons profité pour lui poser plusieurs questions sur les liens qu’entretiennent ces deux villes. Il nous a confirmé ce que nous soupçonnons déjà les deux villes entretiennent très peu de relation. En effet, Sainte Adresse ne souhaite pas du tout se rapprocher de la ville du Havre, et a pris l’exemple de la prolongation du tramway proposé par le Havre que Sainte Adresse à refuser de réaliser. Ceci nous a surpris car cela ne correspondait pas avec ce que nous avait dit l’adjoint au Maire de Sainte Adresse la veille sur le fait que la ville était en projet de prolongation de la ligne du tramway jusqu’à l’entrée de la ville.</p>
+            <p>A la fin de cette réunion, nous avons décidé de rejoindre l’équipe de Jade et Éloïse sur le littoral de Sainte Adresse pour échanger sur l’évolution de notre journée et discuter des nouvelles informations que nous avions obtenues. Nous leur avons expliqué ce que la réunion nous avait appris et elles nous ont expliqué avoir pu interroger des lycéens de Sainte Adresse qui leur ont expliqué que la plupart de leurs activités se font au Havre. Elles leur ont également demandé le métier de leur parent pour déterminer si la population de Sainte Adresse est majoritairement aisée, et ils ont répondu qu’ils étaient cadres et pharmaciens confirmant en partie notre hypothèse.</p>
+            <p>Après cela, nous nous sommes séparés pour continuer nos activités de la journée. Nous sommes alors restés sur le littoral pour faire des entretiens auprès des usagers de la plage entre 13h et 15h. En effet, les entretiens de la veille nous montrant que la population souhaite garder ces espaces naturels pour elle, nous avons voulu voir si les personnes utilisant le littoral de Sainte Adresse était principalement les habitants. Nous y avons réalisé 10 questionnaires nous apprenant plusieurs choses. Tout d’abord, toutes les personnes que nous avons interrogées viennent d’une autre ville, principalement le Havre et quelques villes aux alentours mais aucun n’était habitant de Sainte Adresse. Ensuite, les interrogés nous ont informés que pour la plupart ils ne viennent que pour profiter de la balade en bords de plage car elle est très belle et bien aménagée et certains vont parfois à l’intérieur de la ville. Enfin, la plupart d’entre eux, si ce n’est la majorité, viennent en voiture et se garent dans les parkings proches de la plage, presque aucun des interrogés ne viennent en transport en commun : bien qu’ils les aient désignés comme efficaces, ces personnes venant de loin préfèrent la voiture au transport. Ces entretiens nous ont montré que contrairement à ce que l’on croyait les habitants de Sainte Adresse n'utilisent pas la plage. Ceci pourrait être dû au fait que ce sont des personnes externes à la ville qui viennent et ne souhaitant pas se mélanger avec eux, les habitants ont décidé de ne pas utiliser le littoral de leur ville.</p>
+            <h3>Équipe 2 Jade et Éloïse :</h3>
+            <p>Nous avons commencé notre journée par aller dans les bureaux du Havre Seine Métropole afin de voir si nous pouvions obtenir un rendez-vous avec un ou plusieurs acteurs de l’intercommunalité travaillant dans le domaine de l’urbanisme. Ce rendez-vous nous aurait permis d’obtenir des renseignements supplémentaires sur les aménagements des littoraux notamment ceux de Sainte Adresse et sur les équipements prévus pour cette ville. Au cas où nous obtenions un entretien immédiatement comme la veille, nous avions préparé les questions que nous aimerions leur poser. Cependant, la secrétaire nous a informé que le bureau était très occupé cette semaine alors nous lui avons laissé notre mail pour qu’il nous recontacte dans la possibilité d’avoir un entretien en visioconférence la semaine suivante.</p>
+            <p>Par la suite, nous nous sommes rendus au collège de la Hève pour tenter d’interroger le directeur de l’établissement. En effet, nous nous sommes demandé s’il y avait beaucoup d'étudiants présents dans l’établissement car il paraissait assez grand et pourtant on nous avait informé qu’il y avait peu de jeunes présents à Sainte Adresse. Nous souhaitions aussi lui poser des questions sur les lieux d’habitations des élèves pour savoir s’ils étaient des habitants de sainte Adresse où des villes environnantes permettant d’expliquer la taille de l’établissement. Cependant, nous n’avons pas pu le rencontrer car il était occupé mais on nous a donné rendez-vous pour le lendemain en début d’après-midi pour échanger avec lui.</p>
+            <p>En redescendant vers le littoral pour rejoindre l’équipe 1, nous avons croisé des lycéens que nous avons pu interroger, ils nous ont expliqué qu’ils étaient des habitants de Sainte Adresse mais qu’ils faisaient leurs études au Havre car l’école y est meilleure. Ils nous ont aussi informés que la plupart de leurs activités se faisait au Havre mais qu’il ne considérait pas Sainte Adresse comme dépourvue d’activité ce qui contredit leurs actes. Nous leur avons également demandé la profession de leur parent pour déterminer le profil sociologique habitant la commune et ils nous ont répondu qu’ils étaient cadres et pharmaciens. Après cela, nous avons rejoint l’équipe 1 pour échanger sur notre journée.</p>
+            <p>A la fin de nos échanges nous nous sommes à nouveau séparés. Nous avons décidé de rester aux alentours de l'église de la ville pour tenter d’interroger les habitants. Nous avons fini par interroger la boulangère, habitante du Havre et qui vient chaque jour en vélo pour le travail. Elle nous a donné plusieurs renseignements dont le contacte de sa tante qui est cheffe du service Urbanisme et Prospective du Havre pour que l’on puisse prendre rendez-vous avec elle. Nous sommes ensuite rentrés à l’auberge.</p>
+            <h3>Équipe 3 Armand et Mattéo :</h3>
+            <p>Le matin nous avons fait notre grille d’entretien pour notre entretien qui a eu lieu l’après-midi même avec le professeur de sociologie rencontré le lundi matin. Lors de cet entretien nous avons appris plusieurs choses sur la ville de Sainte Adresse. Tout d’abord, la ville a peu d’objectif touristique. A l’origine le territoire avait vocation à être un espace de tourisme mais avec le développement de Doville comme ville balnéaire, Sainte Adresse a peu cherché à créer un espace touristique pour sa ville. De plus, de nos jours la Mairie ne souhaite absolument pas développer de tourisme sur son littoral ce qui expliquerait les faibles aménagements présents sur le littoral. Le seul type de tourisme que l’on peut retrouver est familial (avec les familles venant visiter leur proche) ou un tourisme mémoriel belge en lien avec la Seconde Guerre mondiale. La seule affiche touristique qu’il y ai eu est assez froide montrant le désir d’attirer très peu de personnes.</p>
+            <p>Il nous a également expliqué que la ville est anciennement un lieu pour les classes sociales les plus aisées, ce qui confirme ce que nous avions appris auprès du CAUE, et que les maisons se transmettent de riches héritiers en riches héritiers. Cela se voit toujours de nos jours : en effet, il n’y a pas d’agence immobilière présente dans la ville, les ventes de maison se font par réseau, il faut connaître quelqu’un pour pouvoir acheter dans la ville. Il y a également peu de vie culturelle propre à Sainte Adresse ce qui fait qu’elle est particulièrement difficile à pénétrer et avec très peu d’emploi. Enfin, il nous aussi dit que malgré le vieillissement de la population il y a peu de renouvellement avec un réseau majoritairement havro-parisien avec des grandes familles toujours présentes.</p>
+            <h3>Retour au groupe :</h3>
+            <p>Lorsque nous sommes tous rentrés à l’auberge nous en avons profité pour échanger. Grâce à cette discussion nous avons pu réellement remarquer un entre-soi très marqué dans la ville de par les habitants ainsi que les acteurs politiques qui la gèrent. Nous avons donc décidé de nous axer le lendemain encore une fois sur l’entre-soi de la commune. Pour cela nous nous sommes encore une fois divisés en trois groupes. Le premier groupe doit aller à l’atelier organisé par l’agence d’urbanisme du Havre pour demander confirmation sur l’annulation de la prolongation de la ligne du tramway jusqu’à Sainte Adresse, puis doit retourner sur le terrain pour aller interroger les parents à la sortie des écoles. Le deuxième groupe devait retourner au collège pour interroger le directeur de l’établissement et faire des entretiens auprès des parents et des jeunes à la sortie des écoles. Et enfin, le dernier groupe devait aller prendre en photo le matin des lieux que nous pourrions dessiner lors de l’atelier dessein prévu avec Madame Nessi à 15h, puis une fois l’atelier terminé retourner sur le littoral pour voir si les usagers de la plage sont cette fois-ci des habitants de la ville qui viennent une fois sortie du travail, en faisant ces entretiens entre 16h et 17h.</p>
+        </section>
+        <section id="jour_4">
+            <h2>Jour 4</h2>
+            <h3>Équipe 1 Callista et Océane :</h3>
+            <p>Du côté du groupe d’Océane et Callista, elles ont commencé leur journée en se rendant à Sainte-Adresse ensemble le matin. Comme nous devions tous rejoindre madame Nessi à 15h, Océane et Callista sont allées prendre des photos des lieux qu’elles aimeraient dessiner. Elles ont effectué un travail de réflexion sur quels lieux il faudrait dessiner pour le rendu final et on finit par prendre des photos des parties aménagées de la promenade de Sainte-Adresse, les rues étroites de Sainte-Adresse, la route en montée de la ville ou encore des façades de maisons pavillonnaire.  Les deux filles ont décidé de commencer à dessiner afin de savoir quelles difficultés elles pouvaient rencontrer en dessin et ce qu’elle voulait demander à madame Nessi.</p>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="Image\photo_croquis_j4.jpg" alt="Photo croquis J4">
+                <p>Source : photographies personnelles - DELAVALLEE Callista</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\croquis_j4.jpg" alt="Croquis J4">
+                <p>Source : croquis personnelles - DELAVALLEE Callista</p>
+            </div>
+        </div>
+            <p>Comme le rendez-vous avec madame Nessi a été annulé, Callista et Océane ont continué d’avancer sur leur dessin pendant le reste de l’après-midi. Vers 15h, elles ont commencé à reprendre les questionnaires pour pouvoir confirmer ou non l’hypothèse que vers des horaires plus tardives, les habitants de Saint-Adresses sont plus présents sur la promenade. L’idée est que les habitants viendraient sur la promenade après être sortis de leur travail. Elles ont donc réalisé des entretiens avec les passants qui se promenaient sur la jetée. Elles se sont rendu compte qu’à nouveau les personnes qui se baladaient sur la jetée était même plus tard dans la journée à nouveau exclusivement des personnes habitant hors de Sainte-Adresse et en majorité des personnes habitant au Havre.</p>
+            <h3>Équipe 2 Jade et Éloïse :</h3>
+            <p>Au début de la journée, nous avons poursuivi notre travail de recherche en consultant différentes ressources en ligne, notamment des données sur la population de Sainte-Adresse, afin de mieux comprendre la structuration sociale de la commune et d’affiner nos premières hypothèses sur le vieillissement et l’entre-soi. En début d’après-midi, nous sommes retournés au collège La Hève, comme convenu la veille avec la secrétaire qui nous avait proposé de repasser pour rencontrer le directeur ou la CPE. Nous souhaitions vérifier si l’établissement constatait une baisse du nombre d’élèves liée au vieillissement de la population et, plus largement, obtenir des informations sur l’origine géographique et sociale des collégiens. Cependant, après une attente d’une trentaine de minutes dans le hall, le directeur et la CPE nous ont finalement indiqué qu’ils n’avaient aucun créneau disponible pour nous recevoir. Cette situation illustre l’une des limites fréquemment rencontrées dans les enquêtes de terrain, où l’accès aux acteurs institutionnels dépend des contraintes organisationnelles et peut parfois s’avérer incertain malgré une première prise de contact.</p>
+            <p>Afin de poursuivre notre récolte d’informations et d’élargir nos profils d’enquêtés, nous nous sommes rendus à 16h30 devant l’école primaire du Manoir pour interroger des familles à la sortie des classes. Sur place, nous avons principalement rencontré des nourrices et des grands-parents venus récupérer les enfants, ainsi qu’un policier chargé de réguler la circulation afin d’assurer la sécurité aux abords de l’établissement. Nous avons pu interroger une dizaine de personnes, ce qui nous a permis d’obtenir de nouveaux éléments sur l’organisation familiale et les pratiques quotidiennes des habitants. Observer la sortie d’école nous a également offert une vision différente de Sainte-Adresse : alors que la ville nous était apparue jusque-là relativement calme, le quartier s’est soudain animé avec l’arrivée des parents, créant un moment particulièrement vivant et révélateur du fonctionnement social local. Après avoir mené l’ensemble de nos entretiens, nous sommes retournés à l’auberge de jeunesse où nous avons partagé nos résultats avec le reste du groupe, ce qui nous a permis de mettre en commun nos observations et d’enrichir notre compréhension générale du territoire.</p>
+            <h3>Équipe 3 Armand et Mattéo :</h3>
+            <p>Nous avons rendez-vous le matin avec l’Agence d’urbanisme du Havre afin de mieux comprendre son rôle au sein du territoire et la manière dont elle accompagne les communes de l’axe Seine, dont Sainte-Adresse. L’entretien nous a permis d’apprendre que l’agence regroupe dix-huit EPCI ainsi que plusieurs écoles, associations et bureaux d’études privés qui adhèrent ( à qui ) pour utiliser ses outils d’observation et de planification. Nous avons appris que certaines communes, dont Sainte-Adresse, sollicitent peu l’agence, notamment sur les mobilités douces, les services de trottinettes ou de vélos en libre-service, ainsi que sur le projet d’extension du tramway entre Le Havre et Sainte-Adresse, aujourd’hui abandonné. Ces éléments traduisent une volonté forte de la commune de conserver la maîtrise de ses décisions et de ne pas s’inscrire pleinement dans une dynamique intercommunale, ce que l’agence relie en partie aux tensions héritées de la loi NOTRe. Sur la question du foncier, l’agence nous a expliqué que Sainte-Adresse se distingue nettement du Havre : les prix y sont deux fois plus élevés, les logements sont constitués d’un bâti préservé et souvent transmis, et l’absence d’agences immobilières renforce l’idée selon laquelle les ventes se font essentiellement par réseau, confirmant la présence d’une population historiquement aisée et privilégiée.</p>
+            <p>L’après-midi, nous nous sommes rendus à proximité des écoles privées et publiques pour interroger des parents, des habitants et quelques usagers présents dans le quartier. Les entretiens réalisés montrent que si une partie des familles habite Sainte-Adresse, beaucoup viennent du Havre (Sanvic, Dollemard, Montivilliers) ou des environs et choisissent ces établissements pour leurs petits effectifs, leur caractère familial ou leur statut privé, facilitant parfois la suite de la scolarité vers le lycée Saint-Jo. Les personnes interrogées décrivent Sainte-Adresse comme une commune calme, résidentielle et plutôt chère. Plusieurs habitants soulignent des difficultés liées à la circulation, notamment des rues dangereuses comme la rue Reine-Élisabeth ou celle d’Octeville et un manque de mobilités douces, les voitures roulant trop vite et les pistes cyclables étant limitées. Le territoire reste fortement orienté vers la voiture, et beaucoup jugent le tram inutile pour les familles. La ville est perçue comme vallonnée, ce qui décourage l’usage du vélo pour certains, surtout sans assistance électrique, et les transports en commun sont jugés comme suffisants avec les dessertes que propose le bus C1. Les entretiens révèlent également une vision différenciée des quartiers : le bas de Sainte-Adresse est décrit comme très résidentiel et cher, alors que le plateau de la Hève accueille davantage de logements collectifs (comme les LOPOFA) et une population plus mixte. Enfin, plusieurs habitants évoquent un manque de commerces dans la commune malgré une offre d’activités satisfaisante pour les enfants, notamment à l’Atelier de Sainte-Adresse. En fin de journée, nous avons tenté de rencontrer l’EHPAD de la commune, bien que nous n’ayons pas pu obtenir d’entretien, le fascicule remis nous a appris que le bâtiment appartient à la ville et qu’il est actuellement en rénovation, ce qui confirme l’importance accordée à la prise en charge d’une population vieillissante et le rôle central de cet établissement dans la commune.</p>
+            <h3>Retour au groupe :</h3>
+            <p>En nous retrouvant à l’auberge, nous avons mis en commun les résultats de nos trois équipes, ce qui nous a permis de clarifier l’évolution de notre problématique. Les observations d’Océane et Callista ont d’abord confirmé que, même en fin de journée, les usagers de la promenade ne sont pas des habitants de Sainte-Adresse mais principalement des Havrais, ce qui renforce l’idée que le littoral est très peu approprié par les résidents. Les entretiens menés autour des écoles ont également montré que beaucoup de familles viennent du Havre ou de communes voisines et que les résidents de Sainte-Adresse représentent une minorité parmi les usagers des établissements scolaires. Enfin, la rencontre avec l’Agence d’urbanisme a mis en évidence la volonté de la commune de garder la maîtrise de ses décisions et de fonctionner en relative autonomie, notamment concernant les mobilités, le foncier ou l’urbanisme.</p>
+            <p>Mis bout à bout, ces éléments ont confirmé que notre problématique s’oriente clairement vers l’analyse de l’entre-soi à Sainte-Adresse. Les données récoltées montrent une faible mixité sociale, une ségrégation entre les quartiers, un littoral peu utilisé par les habitants et une attractivité ciblée sur un public extérieur, ainsi qu’une politique locale allant dans le sens d’un contrôle important de l’évolution du territoire.</p>
+        </section>
+        <section id="jour_5">
+            <h2>Jour 5</h2>
+            <h3>Équipe 1 Callista, Mattéo et Océane : </h3>
+            <p>Pour ce dernier jour, nous avons décidé de nous séparer en deux groupes. Un des groupe (Mattéo, Océane et Callista) avait comme rôle de continuer à dessiner pour pouvoir avoir l’occasion de poser toutes les questions sur les dessins que nous voudrions poser pour pouvoir réaliser des dessins de qualité et à chercher de nouveaux endroits à prendre en photos pour pouvoir être sûr d’avoir l’ensemble des photos nécessaires pour le rendu final.</p>
+            <h3>Équipe 2 Jade, Armand et Éloïse :</h3>
+            <p>L’autre groupe composé de Jade, Eloïse et Armand avait comme objectif de se rendre au marché qu’organise la ville de Sainte-Adresse tous les vendredi matin pour interroger les habitants sur leurs habitudes de consommation et vérifier à nouveau que nos hypothèses et nos observations se confirment afin d’être sûr que nous arrivons à une saturation des données sur le terrain. Eloïse, Jade et Armand ont expliqué que les personnes qu’ils ont rencontrées étaient essentiellement des personnes qui étaient âgées. Seulement une très petite minorité des personnes interrogées étaient venues à pied s’ils habitaient à côté mais la majorité écrasante était venue en voiture. Toutes les personnes qui allaient faire leurs courses au marché venaient de Sainte-Adresse. Le marché de la ville n’est donc pas fréquenté par des personnes venant de communes limitrophes comme on a pu se demander. On a pu remarquer qu’il y avait 8 commerçants sur le marché qui vendaient des produits plutôt variés comme des légumes, des fleurs, des livres, de la charcuterie, des produits mareyés et laitiers. Nous nous attendions à voir un marché plutôt vide avec trois ou quatre commerçants et très peu de visiteurs mais nous avons été plutôt surpris.  En effet, la fréquentation du marché était plutôt élevée et de manière continue pendant les cinq heures durant lesquelles il s’est produit. Les personnes interrogées nous ont expliqué que selon eux, il n’y avait pas assez de commerces dans la ville et que le marché ne suffisait pas. Cela les amènent à se rendre au Havre pour faire leurs courses régulièrement.</p>
+            <h3>Retour au groupe :</h3>
+            <p>A midi, les deux groupes se sont retrouvés pour faire un point sur l’avancement de nos tâches et pour discuter de ce que le groupe du marché avait découvert sur la population qui fréquente le marché, en attendant Madame Nessi pour l’atelier dessin. Durant l’atelier dessin, nous nous sommes séparés pour essayer de dessiner plusieurs points de vue du marché : deux personnes ont dessiné le marché sous deux angles différents et les autres personnes ont dessiné les rues qui mènent au marché. Les rues menant au marché sont pour certaines difficilement accessibles et praticables à pied : elles sont étroites et les trottoirs sont très fins voire même inexistants à certains endroits.</p>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="Image\rue_adjacente_1.jpg" alt="Rue adjacente 1">
+                <p>Source : photographies personnelles - DELAVALLEE Callista</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\rue_adjacente_2.jpg" alt="Rue adjacente 2">
+                <p>Source : photographies personnelles - DELAVALLEE Callista</p>
+        </div>
+            <p>Grâce à ce cours de dessins, nous avons pu apprendre et mieux comprendre comment il est possible de réaliser correctement des dessins en perspective en observant l’objet à dessiner. Voici plusieurs des dessins que nous avons réalisé pendant ce cours de dessin avec madame Nessi : </p>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="Image\croquis_oceane.jpg" alt="Croquis Océane">
+                <p>Source : croquis personnelles - CAUDRON Océane</p>
+            </div>
+            <div class="image-container">
+                <img src="Image\croquis_eloise.jpg" alt="Croquis Eloïse">
+                <p>Source : croquis personnelles - MONCHECOURT Eloïse</p>
+        </div>
+            <p>Pour bien finir notre semaine de terrain, nous avons décidé de manger ensemble, après le cours de dessin, sur la plage. Nous voulions pouvoir expérimenter ce que c’est de vivre comme un groupe de jeunes adultes qui se retrouvent un midi et mangent sur la plage de leur ville. Nous n’étions encore jamais descendu en bas de la plage à cause des galets qui semblaient rendre l'accès à la mer compliqué. C’était effectivement compliqué de descendre sans se faire mal. Nous nous sommes dit en mangeant que mettre tous ces galets impraticables, étaient effectivement un moyen efficace pour dissuader les visiteurs d’y aller. Malgré la complexité pour y aller, la vue y était magnifique et résume bien la beauté de la Normandie : </p>
+        <div class="image-container">
+                <img src="Image\photo_finale.jpg" alt="Photo Normandie">
+                <p>Source : photographies personnelles - DELAVALLEE Callista</p>
+        </div> 
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 - Matteo Teixeira</p>
+    </footer>
+</body>
+</html>
